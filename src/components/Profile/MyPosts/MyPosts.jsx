@@ -22,13 +22,21 @@ const MyPosts = () => {
                 </div>
             </div>
             <div className={s.posts}>
-                <Post message='Hello ilgiz' likeCount='25'/>
-                <Post message='Thank you' likeCount='77'/>
+                <Post message={postData[0].message} likeCount={postData[0].likeCount}/>
+                <Post message={postData[1].message} likeCount={postData[1].likeCount}/>
+
 
             </div>
         </div>
     )
 
 }
+
+let postData = [
+    {id: 1, message: "Hello ilgiz", likeCount: "25" },
+    {id: 2, message: "Thank you", likeCount: "77" },
+    ]
+
+
 
 export default MyPosts
