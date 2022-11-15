@@ -1,7 +1,7 @@
 import rerenderEntireTree from "../render";
 
 let  state ={
-    profilesPage: {
+    dialogsPage : {
         dialogs: [
             {id: 1, name: "ILGIZON"},
             {id: 2, name: "Ilgiz"},
@@ -19,25 +19,36 @@ let  state ={
 
     },
 
-    dialogsPage: {
+    profilesPage: {
         posts: [
             {id: 1, message: 'Hello ilgiz', likeCount: 25 },
             {id: 2, message: 'Thank you', likeCount: 11 },
-        ]
+        ],
+         defaultTextAreaValue: 'Hello My Friend '
     }
 
 }
 
-export let addPost = (postMessage)=>{
+window.state = state
+
+export let addPost = ()=>{
 
     const newObject= {
         id: 3,
-        message: postMessage,
+        message: state.profilesPage.defaultTextAreaValue,
         likeCount: "0"
    }
 
-    state.dialogsPage.posts.push(newObject)
+    state.profilesPage.posts.push(newObject)
+    state.profilesPage.defaultTextAreaValue = ''
     rerenderEntireTree(state)
 }
+
+export let updatePost = (text)=> {
+
+    state.profilesPage.defaultTextAreaValue  = text
+    rerenderEntireTree(state)
+}
+
 
 export default state
