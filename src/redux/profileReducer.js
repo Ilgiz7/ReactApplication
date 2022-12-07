@@ -19,15 +19,18 @@ const profileReducer = (state = initialState, action) => {
                 message: state.defaultTextAreaValue,
                 likeCount: "0"
             }
-            let stateCopy = {...state}
-            stateCopy.posts = [...state.posts]
-            stateCopy.posts.push(newObject)
-            stateCopy.defaultTextAreaValue = ''
-            return stateCopy
+            return  {
+                ...state,
+            posts: [...state.posts, newObject],
+            defaultTextAreaValue: ''
+            }
+
         case UPDATE_NEW_POST_TEXT: {
-            let stateCopy = {...state}
-            stateCopy.defaultTextAreaValue = action.newText
-            return stateCopy
+            return {
+                ...state,
+                defaultTextAreaValue: action.newText
+            }
+
         }
         default:
             return state
