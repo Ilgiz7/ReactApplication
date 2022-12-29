@@ -3,6 +3,7 @@
     height: 100px;
 }
 
-.seletedPage{
+.selectedPage{
     font-weight: bold;
+    color: purple;
 }

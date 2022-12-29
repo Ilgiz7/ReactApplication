@@ -9,11 +9,16 @@
     text-decoration: none;
 }
 
-.item a.active{
+.item a.activeLink{
     color: aqua;
 }
 
-.item a.passive{
-    color: aqua;
-
+a.active{
+    color: purple;
 }
+
+
+/*.item a.passive{*/
+/*    color: #ff00b7;*/
+
+/*}*/

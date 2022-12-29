@@ -8,6 +8,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
+import TasksContainer from "./components/Tasks/TasksContainer";
 // import store from './redux/store'
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
 
@@ -24,11 +25,12 @@ const App = (props) => {
                     <Routes>
 
                         <Route path='/profile' element={<Profile/>}/>
-                        <Route path='/dialogs' element={<DialogsContainer/>}/>
+                        <Route   path='/dialogs' element={<DialogsContainer/>}/>
                         <Route path='/users' element={<UsersContainer/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/music' element={<Music/>}/>
-                        <Route path='/settings' element={<Settings/>}/>
+                        <Route path='/settings' element={<Settings/>}></Route>
+                        <Route path='/tasks' element={<TasksContainer/>}></Route>
                     </Routes>
                 </div>
 

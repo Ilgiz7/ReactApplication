@@ -22,7 +22,7 @@ let rerenderEntireTree = () => {
 rerenderEntireTree()
 
 
-// store.subscribe(()=>{
+//  store.subscribe(()=>{
 //     rerenderEntireTree()
 // })
 
