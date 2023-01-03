@@ -10,8 +10,8 @@ import {connect} from "react-redux";
 let mapStateToProps =(state)=>{
 
     return{
-        profilesPage: state.profilesPage.posts,
-        newPostText: state.profilesPage.defaultTextAreaValue
+        profilesPage: state.profilePage.posts,
+        newPostText: state.profilePage.defaultTextAreaValue
     }
 }
 

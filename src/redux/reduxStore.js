@@ -6,7 +6,7 @@ import tasksReducer from "./tasksReducer";
 
 let reducers = combineReducers({
     dialogsPage:    dialogsReducer ,
-    profilesPage:   profileReducer,
+    profilePage:   profileReducer,
     usersPage: usersReducer,
     tasksPage: tasksReducer
 
