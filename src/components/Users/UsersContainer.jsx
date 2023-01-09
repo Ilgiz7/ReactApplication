@@ -6,7 +6,7 @@ import {
     setUsers,
     setCurrentPage,
     setTotalUserCount,
-    setIsFetching
+    setIsFetching, toggleFollowingProgress
 } from "../../redux/usersReducer";
 import axios from "axios";
 import Users from "./Users";
@@ -101,7 +101,8 @@ export default  connect(mapStateToProps,{
     setUsers,
     setCurrentPage,
     setTotalUserCount,
-    setIsFetching
+    setIsFetching,
+    toggleFollowingProgress
 })(UsersContainer)
 
 
