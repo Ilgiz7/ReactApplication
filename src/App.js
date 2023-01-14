@@ -11,6 +11,7 @@ import DialogsContainer from "./components/Dialogs/DialogsContainer";
 import UsersContainer from "./components/Users/UsersContainer";
 import ProfileContainer from "./components/Profile/ProfileContainer";
 import HeaderContainer from "./components/Header/HeaderContainer";
+import LoginPage from "./components/Login/Login";
 
 
 const App = (props) => {
@@ -29,6 +30,7 @@ const App = (props) => {
                         <Route path='/settings' element={<Settings/>}></Route>
                         <Route path='/tasks' element={<TasksContainer/>}></Route>
                         <Route path='/profile/:userId' element={<ProfileContainer/>}/>
+                        <Route path='/login' element={<LoginPage/>}/>
                     </Routes>
                 </div>
 
