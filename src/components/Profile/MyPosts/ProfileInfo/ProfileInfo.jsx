@@ -17,7 +17,7 @@ const ProfileInfo = (props)=>{
                  {/*</div>*/}
 
                  <div className={s.descriptionBlock}>
-                     <ProfileStatus status={'Hello all'}/>
+                     <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
                      <div>О пользователе</div>
                      <div >
                          <img className={s.avatarPhoto} src={props.profile.photos.large}/>
@@ -28,6 +28,8 @@ const ProfileInfo = (props)=>{
                      <div>Ищу работу: {props.profile.lookingForAJob ?  " Да" : " Нет"  }</div>
                      <div> Описание работы: {props.profile.lookingForAJobDescription}</div>
                      <div> О себе: {props.profile.aboutMe}</div>
+                     <div> ID: {props.profile.userId}</div>
+
                  </div>
 
             </div>
