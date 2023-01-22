@@ -28,7 +28,14 @@ const Navbar = ()=>{
             <div  className={s.item}>
                 <NavLink to="/tasks" className={({ isActive }) => isActive ? s.activeLink : ''}>Tasks</NavLink>
             </div>
+            <div  className={s.item}>
+                <NavLink to="/login" className={({ isActive }) => isActive ? s.activeLink : ''}>Login</NavLink>
+            </div>
+            <div  className={s.item}>
+                <NavLink to="/xooks" className={({ isActive }) => isActive ? s.activeLink : ''}>Xooks</NavLink>
+            </div>
         </nav>
+
     )
 
 }

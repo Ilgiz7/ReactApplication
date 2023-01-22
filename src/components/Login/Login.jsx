@@ -1,34 +1,34 @@
 import React from "react";
-import reduxForm from "redux-form/lib/immutable/reduxForm";
-import Field from "redux-form/lib/Field";
+import {useForm} from "react-hook-form";
 
 const LoginForm = (props)=>{
-    return (
+    return (<div>
         <form>
             <div>
-                <Field placeholder="Login" component={"input"}/>
+                <input placeholder="Login" />
             </div>
             <div>
-                <Field placeholder="Password"  component={"input"}/>
+                <input placeholder="Password"  />
             </div>
             <div>
-                <Field type={'checkbox'}  component={"input"}/> remember me
+                <input type={'checkbox'}  /> remember me
             </div>
             <div>
                 <button>Login</button>
             </div>
         </form>
+  </div>
     )
 }
 
-const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
+
 
 
 
 const Login = (props)=>{
     return ( <div>
         <h1>Login</h1>
-        <LoginReduxForm/>
+        <LoginForm/>
     </div>)
 }
 
