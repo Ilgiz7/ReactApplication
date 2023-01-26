@@ -34,6 +34,9 @@ const Navbar = ()=>{
             <div  className={s.item}>
                 <NavLink to="/xooks" className={({ isActive }) => isActive ? s.activeLink : ''}>Xooks</NavLink>
             </div>
+            <div  className={s.item}>
+                <NavLink to="/hookform" className={({ isActive }) => isActive ? s.activeLink : ''}>Hookform</NavLink>
+            </div>
         </nav>
 
     )

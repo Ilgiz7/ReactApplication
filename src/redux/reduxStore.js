@@ -5,6 +5,7 @@ import usersReducer from "./usersReducer";
 import tasksReducer from "./tasksReducer";
 import authReducer from "./auth-reducer";
 import  thunkMiddleware from "redux-thunk";
+import hookFormReducer from "./hook-form-reducer"
 
 
 
@@ -15,6 +16,7 @@ let reducers = combineReducers({
     usersPage: usersReducer,
     tasksPage: tasksReducer,
     auth: authReducer,
+    hookFormState : hookFormReducer
 
 })
 
