@@ -3,6 +3,10 @@ import s from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem'
 import Message from "./Message/Message";
 import {Navigate} from "react-router";
+import {useForm} from "react-hook-form";
+import {connect} from "react-redux";
+import {updateAction} from "../../redux/hook-form-reducer";
+import AddMessageForm from "./AddMessageForm";
 
 
 const Dialogs = (props) => {
@@ -45,19 +49,5 @@ const Dialogs = (props) => {
 }
 
 
-const AddMessageForm =   (props)=>{
-
-
-return (
-    <div>
-        <div><textarea value={props.newMessageBody}
-                       onChange={props.onNewMessageChange}
-                       placeholder='Enter your message'> </textarea></div>
-        <div>
-            <button onClick={props.onSendMessageClick}>Send</button>
-        </div>
-    </div>)
-
- }
 
 export default Dialogs
