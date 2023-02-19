@@ -3,9 +3,9 @@ import s from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem'
 import Message from "./Message/Message";
 import {Navigate} from "react-router";
-import {useForm} from "react-hook-form";
-import {connect} from "react-redux";
-import {updateAction} from "../../redux/hook-form-reducer";
+// import {useForm} from "react-hook-form";
+// import {connect} from "react-redux";
+// import {updateAction} from "../../redux/hook-form-reducer";
 import AddMessageForm from "./AddMessageForm";
 
 

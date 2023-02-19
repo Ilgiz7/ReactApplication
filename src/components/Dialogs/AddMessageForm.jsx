@@ -1,11 +1,6 @@
 import React, {useState} from "react";
-import s from './Dialogs.module.css'
-import DialogItem from './DialogItem/DialogItem'
-import Message from "./Message/Message";
-import {Navigate} from "react-router";
 import {useForm} from "react-hook-form";
 import {connect} from "react-redux";
-import {updateAction} from "../../redux/hook-form-reducer";
 import {sendMessageBodyCreator, updateNewMessageBodyCreator} from "../../redux/dialogsReducer";
 
 
@@ -16,7 +11,7 @@ const AddMessageForm =   (props)=>{
 
     const [localNewMessageBody, setlocalNewMessageBody] = useState('localState')
 
-    const { register, handleSubmit, setValue } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
         console.log(data)
