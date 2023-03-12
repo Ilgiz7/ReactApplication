@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import {useForm} from "react-hook-form";
 import {useFormik} from "formik";
@@ -103,17 +104,27 @@ const SignupForm = () => {
     );
 };
 
+=======
+import React from 'react';
+import LoginForm from "../Forms/LoginForm";
+>>>>>>> c689ba414cccb983ccd5c0856ab033eb22cbf835
 
 
 const Login = (props)=>{
     return ( <div>
         <h1>Login</h1>
+<<<<<<< HEAD
         {/*<LoginForm/>*/}
         <div>
             <SignupForm/>
 
         </div>
     </div>)
+=======
+        <LoginForm/>
+
+  </div>)
+>>>>>>> c689ba414cccb983ccd5c0856ab033eb22cbf835
 }
 
  export default Login
